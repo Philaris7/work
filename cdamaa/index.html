@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+
+<!--
+	TNav : Top navigation
+
+-->
+
+<html lang="en">
+
+<head>
+	  <meta charset="utf-8"/>
+      <meta name = "viewport" content ="width=device-width , initial-scale=1.0"/> 
+      <title>Home | Site name </title>
+      <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+      <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+      <link rel ="stylesheet" href = "css/index.css" /> 
+      <script  src="js/toggle_menu.js"> </script>
+	  <script  src="js/map.js"> </script>
+	  <!--google map API-->
+	  <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCMcS6zlONtxFFfCk_Hp7DAZt0JQOVKp7E&callback=initMap"
+    async defer></script>
+
+</head>
+
+ <body> 
+    <div id ="wrapper1">
+
+        <!--Homepage header-->
+       <!-- <header id="top_header" class="upper_body_item">             
+            <a href="index.html"></a>              
+        </header>-->
+
+
+	
+		<!--Homepage navigation bar -->
+	    <div id="menu_icon_container">
+	      <img id="menu_icon" alt="Menu icon" src="images/menu_icon.png">
+          <a href="index.html"><h1  id="page_tiltle" style="color : white;"><pre> Page Title </pre></h1></a>  
+	    </div>
+
+		<nav id ="nav">
+			<ul class = "top_menu">		
+			    <!--Home page tab -->
+				<li class="top_menu_list" id='top_nav_home'> <a href="index.html"> Home </a > </li>
+				 
+				 <!--Data Service page tab-->
+				 <li class="top_menu_list" id='TNav_data_services'> <a href="#">Data Services</a>
+				    <ul class="sub_menu">
+				         <li class="sub_menu_list"> <a href="#">Data Curation Process</a> </li>
+				         <li class="sub_menu_list"> <a href="#">Open Data</a> </li>
+				         <li class="sub_menu_list"> <a href="#">Secure Data</a> </li>
+				         <li class="sub_menu_list"> <a href="#">Get Help</a> </li>
+				         <li class="sub_menu_list"> <a href="#">Deposit Data</a> </li>
+				         <li class="sub_menu_list"> <a href="#">What is Data</a> </li>
+				         <li class="sub_menu_list"> <a href="#">Cite Data used in your research</a> </li>
+				    </ul>
+				 </li> 				 
+				
+				<!--Training page tab -->			    
+				<li class="top_menu_list" id='TNav_raining'><a href="#">Training</a> 
+				    <ul class="sub_menu">
+				        <li class="sub_menu_list"> <a href="#"> Data Analysis Courses </a></li>
+				        <li class="sub_menu_list"> <a href="#"> Workshops </a> </li>
+				    </ul>
+				</li>
+				  
+				<!--Research page tab-->    
+				<li class="top_menu_list" id='TNav_training'> <a href="#">Research</a></li>
+				  
+				<!--About page tab-->    
+				<li class="top_menu_list" id='TNav_about'> <a href="#">About Us</a> 
+				    <ul   class="sub_menu">
+				        <li class="sub_menu_list" > <a href="#"> Mission Statement </a> </li>
+				        <li class="sub_menu_list" > <a href="#"> Our Team </a> </li>
+				        <li class="sub_menu_list" > <a href="#"> Contact Us </a> </li>
+			    	</ul>
+				</li>
+				 
+	            <!--Blog page tab-->  
+	            <li class="top_menu_list" id='TNav_blog'><a href="#">Blog</a></li> 
+	            <div class="navbar-collapse collapse">
+                  <ul class="nav navbar-nav navbar-right right">
+                    <li><a href="register.html">Register</a></li>
+                    <li><a href="login.html">Login</a></li>
+                 </ul>
+      </div>
+		</ul>
+	</nav> <!-- End of Home page top Navigatinon Bar -->
+		
+		<!-- welcome section -->
+    <div id="main_page">
+
+		<div class="container-fluid padding">
+			<div class="row welcome text-center">
+				<div class="col-12">
+				   <h1 class="display-4 welcome">WELCOME TO CDAMAA</h1>
+				</div>
+				<hr>
+				<div class="col-12">
+					<p class="jump">CDAMAA is a datasite with the mission of making data access to the general public available for usage. <br>We promote high quality research by providing the essential Open Research Data Infrastructure for discovering and accessing data </p>
+				</div>	
+			</div>
+		</div>	<br><br>
+
+		<!--three column section-->
+		<div class="container-fluid padding " >
+			<div class="row text-center padding">
+				<div class="col-xs-12 col-sm-6 col-md-4">
+					<h2><span class="glyphicon glyphicon-home icon"></span></h2>
+					<!--<i class="glyphicon glyphicon-home icon"></i>-->
+					<h3 class="welcome">Open Data Portal</h3>
+				</div>
+
+				<div class="col-xs-12 col-sm-6 col-md-4">
+					<h2><span class="glyphicon glyphicon-lock icon"></span></h2>
+					<h3 class="welcome">Secure Research Data Centre</h3>
+				</div>
+
+				<div class="col-sm-6 col-md-4">
+					<h2><span class="glyphicon glyphicon-education icon"></span></h2>
+					<h3 class="welcome">Training</h3>
+				</div>
+			</div>
+		</div>
+
+	</div><!--End of main page-->
+
+	 <!--footer-->		
+     <footer id="footer">
+    	
+
+    	<!--Site Map -->   
+        <div id="f_site_map" class="footer_item">
+             <h3 pull-center><a href="#">Site Map</a></h3> 
+             <ul>
+				<li> <a href="#">   -Home </a> </li>
+			    <li  > <a href="#"> -Data Services</a> </li>
+			    <li  ><a href="#">  -Training</a> </li>
+			    <li ><a href="#">   -Research </a> </li>
+			     <li ><a href="#">  -About Us </a> </li>
+			     <li ><a href="#">  -Blog </a> </li>
+			</ul>             
+		</div>
+	   
+
+	    <!-- Footer menu for Research areas -->
+        <div id="f_research" class="footer_item">
+              <h3><a href="research.html"> Research Areas </a > </h3>  
+			     <ul>
+			         <li> <a href="#"> -Topic 1 </a> </li>
+			         <li> <a href="#"> -Topic 1</a> </li>
+			     </ul>
+        </div>
+    
+		
+
+	    <!-- Footer menu for Contact areas -->
+        <div id="f_contact" class="footer_item">
+              <h3><a href="contact.html"> Contact Info </a > </h3>  
+		      <p><i class="glyphicon glyphicon-map-marker"></i>Office number 117, First floor Faculty of Social Sciences Building.
+               Working Hours: <br>Mondays to Fridays - 7:30AM - 4:30PM</p>	
+				<p><i class="glyphicon glyphicon-phone-alt"></i> 02448574633 </p>
+				<p><i class="glyphicon glyphicon-envelope"></i> c-damaa@ucc.edu.gh </p>
+				
+        </div>
+
+        
+        <!--Footer menu for Map -->
+        <div id="f_map" class="footer_item">
+        		<h3>Locate Us </h3>	
+            	<div id="map_box">
+            		<p>hello Map</p>
+            	</div>
+        </div>            
+     </footer>
+
+      <div id="footer_base" class="container">
+     	<div class="row">
+	     	<div id="copyright" class="footer_base_item col-sm-6">
+	     		<p> &copyCopyright 2019 <a href="https://www.CDAMAA.com">CDAMAA</p>
+	 		</div>
+
+	 		<div id="social_media_logos" class="footer_base_item col-sm-6 ">
+                    <!--Facebook Icon-->
+                       <a href="#" class="fa fa-facebook fa-2x"></a>
+                    
+                    
+                    <!--Twitter icon-->
+                        <a href="#" class="fa fa-twitter fa-2x"></a>
+
+                    <!--Instagram icon-->
+                        <a href="#" class="fa fa-instagram fa-2x"></a>
+       	 	</div>
+		</div><!--End of Row-->
+     </div><!--End of footer_base-->
+   
+ 	</div>
+
+     
+
+
+
+</body>
+</html>
